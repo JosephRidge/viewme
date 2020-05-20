@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" > 
+<title> WSD lISTINGS</title>
+<style>
+
+.navbar-custom {
+  background-color: #0047bb !important;
+  border-color: #030033 !important;
+  color: white !important;
+  position: fixed !important;
+  width: 100% !important;
+}
+.nav-link {
+  color: white !important;
+  float: left !important;
+  align-content: center;
+  padding-left: 10px !important;
+}
+.nav-pos {
+  float: right !important;
+  display: Inline-block !important;
+  padding: 10px 9px 10px 9px;
+}
+.nav {
+  position: fixed !important;
+}
+.my_font{
+  font-size: 10.em;
+  font-family: 'Roboto-Regular', Arial, sans-serif;
+
+}
+
+.my_items:hover{
+  background-color:#ffffff;
+  border-radius:12px;
+  font-size: 25vx;
+  padding-right: 5px; 
+  padding-left: 5px;
+  color: black !important;
+  text-decoration-style: solid;
+  opacity: 0.8;
+  transition: all 0.3s ease 0s;
+}
+
+/* add */
+.header {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    background-color:  #0047bb;
+    display: inline-block;
+    text-align:left;
+    padding: 8px 20px;
+    box-shadow: 0 4px 6px rgb(128,128,128); 
+    position: fixed;
+  
+  }
+  p{
+      font-size: 100%;
+     
+  }
+  .title_font{
+      font-size: 37vx;
+      text-decoration-style: solid;
+      text-decoration-color: currentcolor;
+      color: #575656;
+  }
+  .sub_titile_font{
+      font-size: 25vx;
+      text-decoration-style: none;
+      text-decoration-color: currentcolor;
+      color: #575656;
+  
+  }
+  
+  html{
+      
+      font-family: 'Roboto', sans-serif;
+     
+  
+  }
+  article{
+      text-align: justify;
+      max-width: 1600px;
+      font-size: 100%;
+      background-color: #ffffff;
+      padding: 0 20px;
+      
+      padding-top: 90px;
+
+      padding-right: 20px;
+      padding-bottom: 30px;
+      padding-left: 20px;
+      margin: 0 auto;
+      margin-top: 0px;
+      margin-right: auto;
+      margin-bottom: 0px;
+      margin-left: auto;
+    /* neww */
+      overflow: hidden;
+  }
+  .mylogo{
+      max-width: 300px;
+      float: left;
+      line-height: 50px;
+      padding:0px; 
+      width: 40%;
+      background-color: #fff;
+      height: 40%;
+  }
+  body {
+    padding: 0px;
+    margin: 0px;
+      overflow: hidden; 
+    width: 100%;
+    /* font-family: 'Roboto-Regular', Arial, sans-serif; */
+    /* background-color: #8657d1 */
+    background-color:  #e6e9eed2;
+    
+  
+  }
+  html{
+  
+    
+      max-width: 100%;
+      overflow-x: hidden;
+      scrollbar-width: none;
+       /* new */
+     background-color: #d3d3d3;
+      box-sizing: border-box;
+  }
+  .content{
+      padding:40px;
+      width: 100%;
+      padding-left: 0px;
+      padding-top: 0px;
+      align-content: justify;
+      
+      
+  }
+  .backgrnd {
+  margin: 0;
+  padding: 30px;
+  background-color: lightgray;
+  padding-block-end: 5px;
+}
+  .box{
+      width: 100%;
+      height: 100%;
+      padding: 10px;  
+      padding-top: 66px;
+      box-sizing: border-box;
+  }
+  img{
+    border-style: none;
+    max-width: 220px;
+    float: left;
+    line-height: 50px;
+    padding: 0px;
+    vertical-align: top;
+    display: inline-block;
+    height: auto;
+}
+
+h3{
+     word-wrap: break-word;
+     -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+     -ms-hyphens: auto;
+     -o-hyphens: auto;
+     hyphens: auto;
+     /* text-align: auto; */
+}
+@media screen and (max-width: 768px) {
+    h3{
+        font-size:30px;
+    }
+    .title_font{
+      text-align: center;
+    }
+    .sub_titile_font{
+      text-align: center;
+    }
+    .backgrnd{
+      padding: 10px;
+    }
+    .button{
+      background-color: #d3d3d354;
+    }
+}
+  
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom navbar-fixed-top" >
+<a class="navbar-brand " ><img class="logo" src="img/new.svg" ></img></i>   </a>
+<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- nav content -->
+<div class="container">
+<div class="collapse navbar-collapse " id="navbar1">
+<ul class="navbar-nav navbar-dark ml-auto my_font"  >
+<li class="nav-item active ">
+<a class="nav-link my_items" href="#intro"> GDB </a>
+</li>
+<li class="nav-item">
+<a class="nav-link my_items" href="#List">Qualified GDB</a>
+</li>
+<li class="nav-item">
+<a class="nav-link my_items " href="#Avail">Available WSDB's  </a>
+</li>
+<li class="nav-item ">
+        <a class="nav-link  my_items" href="#Sample">Sample Responses</a>
+        </li>
+</ul>
+</div>
+</div>
+
+
+</nav>
+<!-- End of Navbar -->
+<!-- Bootstrap 4 Scripts -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+<body >
+ <div id="intro"></div>
+ <div class="backgrnd">
+        <article>
+             <h3 class="title_font" >Geolocation databases for Dynamic Spectrum Access to TV WhiteSpaces</h3>   
+                <p> This site contains the listing service for the providers of Geolocation Databases (GDBs).
+                        These providers are organisations that have been qualified by Communications Authority 
+                        of Kenya (CA) to provide geolocation services to white space devices (WSDs).
+                        A master WSD may only obtain operational parameters from a GDB that is in this list.
+                        Master WSDs that intend to operate in Kenya must download the list of qualified GDBs
+                        before initiating radio transmissions in the UHF band 470 - 694 MHz. After 
+                        downloading the list,
+                        the master WSD should contact one of the GDBs in order
+                        to obtain the operational parameters for radio transmissions in the UHF TV band.</p> 
+                    
+            <h4 class="sub_titile_font" id="List">List of Geolocation Databases qualified to operate in Kenya</h4>
+            <ol>
+              <li><a href="">GDB Provider 1</a></li>
+              <li><a href=""> GDB Provider 2 </a></li>
+               <li><a href=""> GDB Provider 3 </a></li>
+            </ol>
+            <p>
+            WSDs shall only operate in the UHF band under a lightly licensed model
+             in accordance with the Dynamic Spectrum Access framework for "Authorisation of the Use of TV Whitespaces."
+                 
+           </p>
+
+           <p>The following organisations have been qualified by CA and 
+               are listed in accordance with the DSA framework
+                   for TVWS as permitted to operate GDBs from which 
+                   WSDs may obtain operational parameters: 
+           </p>
+           <ol>
+                <li>GDB Provider 1</li>
+                <li>GDB Provider 2</li>
+                <li>GDB Provider 3</li>
+               
+              </ol>
+           
+          <p>These GDBs will be added to the discoverable list accessible to WSDs 
+              as an xml file once they are ready to start providing 
+                  GDB services to WSDs.</p>
+          <h4 class="sub_titile_font" id="Avail">Available WSDB's discoverable to the WSD's</h4>
+             
+          <ol> 
+            <li> <a href= "https://ca.go.ke/dsa/geolocationdatabaselist.xml">Geolocation Database List(XML format)</a></li>
+            <li> <a href= "https://ca.go.ke/dsa/geolocationdatabaselist.json/">Geolocation Database List(JSON format)</a></li>
+          </ol>
+          <h4 class="sub_titile_font" id="Sample"> Sample Response</h4>
+          <ol>
+            
+                     <li><a href="/weblist.xml"> XML List</a></li> 
+                    
+                              <li> <a href="/weblist.json"> JSON List</a>   </li>
+          </ol>
+    </article>
+    </div>
+    <script>
+      $(function(){
+var n = $(".collapse");
+n.on("click", "a:not([data-toggle])", null, function () {
+         n.collapse('hide');
+     });
+ });
+    
+    </script>
+</body>
+</html>
