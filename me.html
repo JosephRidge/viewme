@@ -36,18 +36,19 @@
   font-family: 'Roboto-Regular', Arial, sans-serif;
 
 }
-
+.my_items{
+   padding: 14px 16px;
+   }
 .my_items:hover{
-  background-color:#ffffff;
-  border-radius:12px;
+   border-radius:12px;
+ 
   font-size: 25vx;
   padding-right: 5px; 
   padding-left: 5px;
-  color: black !important;
+  background-color: rgba(0, 0, 0, 0.883) !important;
   text-decoration-style: solid;
-  
   opacity: 0.8;
-   transition: all 1.3s ease -1s;
+  transition: all 1.3s ease -1s;
 }
 
 /* add */
@@ -281,8 +282,7 @@ float: center;
 }
 .buttony:hover{
   /* background-color:  #edeef7 ; */
-  border-radius: 5px;
-  font-size: 20px;
+  text-decoration-line:underline;
   text-decoration-style: solid;
   color:#007bff;;
   
@@ -444,11 +444,12 @@ font-weight: bold;
             <li> <a href= "https://ca.go.ke/dsa/geolocationdatabaselist.json/">Geolocation Database List(JSON format)</a></li>
           </ol>
           <h4 class="sub_titile_font" id="Sample"> Sample Response</h4>
-         <ol>
+         
+           <ol>
     <li> <div class="btn-group">
-              <button class="buttony" id="myBtn">XML  List</button> 
+              <div class="buttony" id="myBtn">XML  List</div> 
        </div></li>
-           </ol>
+           
   <!-- The xml -->
   <div id="myModal" class="modal">
     <!-- Modal content -->
@@ -523,7 +524,7 @@ font-weight: bold;
               </article>
               <div style=" background-color: rgb(194, 189, 189) ; color: white; font-weight: bold;border-radius: 12px; text-align: center ; padding-top: 25px; padding-bottom:25px;margin: 0px;"> weblist.xml ends </div>
     </div>
-  
+  https://www.w3schools.com/howto/howto_js_popup.asp
   </div>
 
 
@@ -545,12 +546,14 @@ font-weight: bold;
     }
   };
   </script>
-<ol>
+
+           
                 <li> <div class="btn-group">
                  
                   <button class="buttony" id="myBtn2">JSON List</button> 
               
                    </li> 
+           </ol>
 
               <div id="myModal2" class="modal">
 
