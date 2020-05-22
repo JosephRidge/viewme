@@ -202,6 +202,156 @@ h3{
       padding-top: 110px;
     }
 }
+    /* modals */
+  .modal {
+    display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding-top: 100px; /* Location of the box */
+              right: 0;
+              top: 0;
+              width: -100%;
+              height: 100%; 
+              overflow: auto;
+            
+            }
+            
+            /* Modal Content */
+            .modal-content {
+              background-color: rgb(227, 227, 235);
+              margin: auto;
+              padding: 20px;
+              opacity: 0.9;
+              border: 1px solid rgb(189, 184, 184);
+              width: 43%;
+              /* overflow:auto; */
+              border-radius:12px;
+              height: auto;
+              margin-top: 5%;
+margin-bottom: 22%;
+              animation-duration: 0.4s;
+
+
+            }
+@media screen and (max-width: 700px) {
+   .modal{
+   
+     float: left;
+     
+   }
+   .modal-content{
+     width:100%;
+     float: left;
+   }
+}
+            @keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+            /* The Close Button */
+ .close {
+color: #aaaaaa;
+float: right;
+height: 100%;
+font-size: 28px;
+font-weight: bold;
+}
+            
+.close:hover,
+ .close:focus {
+  color: #000;
+ background-color:  #edeef7 ;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight:bold;
+
+  /* background-color: aqua; */
+            }
+
+  .buttony {
+  background-color: white ;
+  color:#007bff;
+  width: 50%;
+  padding: 10px;
+  width: 100%;
+  border:transparent ;
+float: center;
+  font-weight: 200px;
+      font-family: 'Roboto-Regular', Arial, sans-serif;
+}
+.buttony:hover{
+  /* background-color:  #edeef7 ; */
+  border-radius: 5px;
+  font-size: 20px;
+  text-decoration-style: solid;
+  color:#007bff;;
+  
+}
+
+
+.modal2 {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding-top: 100px; /* Location of the box */
+              right: 0;
+              top: 0;
+              width: -100%;
+              height: 100%; 
+              overflow: auto;
+            
+            }
+            
+            /* Modal Content */
+            .modal-content2 {
+              background-color: rgb(227, 227, 235);
+              margin: auto;
+              padding: 20px;
+              opacity: 0.9;
+              border: 1px solid rgb(189, 184, 184);
+              width: 43%;
+              /* overflow:auto; */
+              border-radius:12px;
+              height: auto;
+              margin-top: 5%;
+margin-bottom: 22%;
+              animation-duration: 0.4s;
+
+            }
+@media screen and (max-width: 700px) {
+   .modal2{
+    
+    float: left;
+   }
+   .modal-content2{
+    width:100%;
+     float: left;
+   }
+}
+            @keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+            /* The Close Button */
+ .close2 {
+color: #aaaaaa;
+float: right;
+height: 100%;
+padding: 10px;
+font-size: 28px;
+font-weight: bold;
+}
+            
+.close2:hover,
+ .close2:focus {
+  color: #000;
+ background-color:  #edeef7 ;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight:bold;
+
+  /* background-color: aqua; */
+            }
   
 </style>
 </head>
@@ -300,8 +450,158 @@ h3{
                     
                               <li> <a href="/weblist.json"> JSON List</a>   </li>
           </ol>
-    </article>
+    <li> <div class="btn-group">
+              <button class="buttony" id="myBtn">XML  List</button> 
+          </div>
+
+  <!-- The xml -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <style>
+       
+              </style>
+              <div style=" background-color: rgb(194, 189, 189) ; color: white; font-weight: bold;border-radius: 12px; text-align: center ; padding-top: 25px; padding-bottom:25px;margin: 0px;"> weblist.xml starts </div>
+              <article id="cody_code" style="background-color: rgb(236, 235, 235); padding: 20px; height: auto; border-radius: 12px;">
+              <span style="color:brown;">
+                <span style="color:black">&lt;</span> ?xml <span style="color:red">version</span> <span style="color:blue">="1.0"</span>
+                <span style="color:red">encoding </span> <span style="color:blue">="UTF-8"?</span><span style="color:black">&gt;</span><br />
+              
+                <span style="color:black">&lt;</span>
+                <span style="color: purple;font-weight: bold;">ws_databases</span>
+                <span style="color: black; font-weight: bold; ">xmlns:xsi=</span>
+                <href style="color: blue">"http://www.w3.org/2001/XMLSchema-instance"</href>xsi:noNamespaceSchemaLocation=<href style="color: blue">"https://www.ca.go.ke/dsa/geolocationdatabaselist.xsd</href>
+                <!---  code-->
+                <span style="color:black">&gt;</span><br />
+                <!-- <ws_databases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.ca.go.ke/dsa/geolocationdatabaselist.xsd"> -->
+              &nbsp;  &nbsp; &nbsp; <span style="color:black">&lt;</span> <span style="color: purple;font-weight: bold;">last_update</span>
+                <!-- code --><span style="color:black">&gt;</span> <span style="color:black">2020-01-01T12:00:00 </span>
+                <span style="color:black">&lt;</span><span style="color: purple;font-weight: bold;">/last_update </span>
+                <!-- code --><span style="color:black">&gt;</span><br />
+              
+              &nbsp;  &nbsp; &nbsp; <span style="color:black">&lt;</span><span style="color: purple;font-weight: bold;"></span> <span style="color: purple;font-weight: bold;">refresh_rate </span></span
+              ><!-- code --><span style="color:black">&gt;</span>
+              <span style="color:black"> 1440 </span> <span style="color:black">&lt;</span
+              ><span style="color: purple;font-weight: bold;">/refresh_rate</span>
+              <!-- code --><span style="color:black">&gt;</span><br />
+              
+              <span style="color:black">&lt;</span
+              ><span style="color: purple;font-weight: bold;">db</span>
+              <!-- code --><span style="color:black">&gt;</span><br />
+              
+              &nbsp;  &nbsp; &nbsp; <span style="color:black">&lt;</span
+              ><span style="color: purple;font-weight: bold;">url</span> <span style="color: black"><href style="color: blue">https://WSdatabase-provider1.com</href></span>
+              <!-- code --><span style="color:black">&gt;</span>
+              <span style="color:black">&lt;</span
+              ><span style="color: purple;font-weight: bold;">/url</span>
+              <!-- code --><span style="color:black">&gt;</span><br />
+              
+              &nbsp;  &nbsp; &nbsp; <span style="color:black">&lt;</span
+              ><span style="color: purple;font-weight: bold;">db_provider_name</span>
+              <!-- code --><span style="color:black">&gt;</span><span style="color:black"> Database provider 1</span> 
+              <span style="color:black">&lt;</span
+              ><span style="color: purple;font-weight: bold;">/db_provider_name </span
+              ><!-- code --><span style="color:black">&gt;</span><br />
+              
+              &nbsp;  &nbsp; &nbsp; <span style="color:black">&lt;</span
+              ><span style="color: purple;font-weight: bold;">ws_db_id</span><span style="color:black"> 1</span> 
+              <!-- code --><span style="color:black">&gt;</span>
+              <span style="color:black">&lt;</span
+              ><span style="color: purple;font-weight: bold;">/ws_db_id </span
+              ><!-- code --><span style="color:black">&gt;</span><br />
+              &nbsp;  &nbsp; &nbsp; <span style="color:black">&lt;</span
+              ><span style="color: purple;font-weight: bold;">MCWSD_support</span><span style="color:black"> false</span> 
+              <!-- code --><span style="color:black">&gt;</span>
+              <span style="color:black">&lt;</span
+              ><span style="color: purple;font-weight: bold;">/MCWSD_support </span
+              ><!-- code --><span style="color:black">&gt;</span><br />
+              
+              <span style="color:black">&lt;</span
+              ><span style="color: purple;font-weight: bold;">/db</span>
+              <!-- code --><span style="color:black">&gt;</span><br />
+              
+              <span style="color:black">&lt;</span
+              ><span style="color: purple;font-weight: bold;">/ws_databases</span>
+              <!-- code --><span style="color:black">&gt;</span><br />
+              </article>
+              <div style=" background-color: rgb(194, 189, 189) ; color: white; font-weight: bold;border-radius: 12px; text-align: center ; padding-top: 25px; padding-bottom:25px;margin: 0px;"> weblist.xml ends </div>
     </div>
+  
+  </div>
+
+
+
+  <script>
+  var modal = document.getElementById("myModal");
+  var btn = document.getElementById("myBtn");
+  var span = document.getElementsByClassName("close")[0];
+  btn.onclick = function() {
+    modal.style.display = "block";
+  };
+ 
+  span.onclick = function() {
+    modal.style.display = "none";
+  };
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+  </script>
+</li>
+              <li><div class="btn-group">
+                  <button class="buttony" id="myBtn2">JSON List</button> 
+              </li> 
+
+              <div id="myModal2" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content2">
+                  <span class="close2">&times;</span>
+
+              <div style=" background-color: rgb(194, 189, 189) ; color: white; font-weight: bold;border-radius: 12px; text-align: center ; padding-top: 25px; padding-bottom:25px;margin: 0px;"> weblist.json starts </div>
+              <article style="background-color: rgb(236, 235, 235); padding: 20px; height: auto; border-radius: 12px;">
+               </span>{<br><span class="jsstringcolor" style="color:brown">"ws_databases": </span>{<br><span class="jsnumbercolor" style="color:red">
+               </span>&nbsp;&nbsp;&nbsp; <span class="jsstringcolor" style="color:brown">"last_update"</span>:<span class="jsstringcolor" style="color:brown">"2020-01-01T12:00:00"</span>, <span class="jsstringcolor" style="color:brown"> "refresh_rate"</span>:<span class="jsstringcolor" style="color:brown">"1440"</span>, <br><span class="jsnumbercolor" style="color:red">
+               </span>&nbsp;&nbsp;&nbsp; <span class="jsstringcolor" style="color:brown">"db"</span>:<span class="jsstringcolor" style="color:brown"> [</span><br>
+               </span>&nbsp;&nbsp;&nbsp; <span class="jsstringcolor" style="color:brown">{</span><br>
+               </span>&nbsp;&nbsp;&nbsp; <span class="jsstringcolor" style="color:brown">"url"</span>:<span class="jsstringcolor" style="color:brown">"https://WSdatabase-provider1.com"</span>, <span class="jsstringcolor" style="color:brown"> "db_provider_name"</span>:<span class="jsstringcolor" style="color:brown">"Database provider 1"</span>, <span class="jsstringcolor" style="color:brown">"ws_db_id"</span>:<span>"1"</span> ,</span><br><span class="jsnumbercolor" style="color:red">
+               </span>
+               <span class="jsstringcolor" style="color:brown">"MCWSD_support"</span><span>:</span><span class="jsstringcolor" style="color:brown"> false</span><br>
+               <span>},</span><br>
+               <span>{</span>
+               &nbsp;&nbsp;&nbsp; <span class="jsstringcolor" style="color:brown">"url"</span>:<span class="jsstringcolor" style="color:brown">"https://WSdatabase-provider2.com"</span>, <span class="jsstringcolor" style="color:brown"> "db_provider_name"</span>:<span class="jsstringcolor" style="color:brown">"Database provider 2"</span>, <span style="color:brown"> "db_provider_name"</span>:<span class="jsstringcolor" style="color:brown">"Database provider 1"</span>, <span class="jsstringcolor" style="color:brown">"ws_db_id"</span>:<span style="color:brown"> "db_provider_name"</span>:<span class="jsstringcolor" style="color:brown">"Database provider 1"</span>, <span class="jsstringcolor" style="color:brown"> "2"</span> ,</span><br><span class="jsnumbercolor" style="color:red">
+                 </span>
+               &nbsp;&nbsp;&nbsp; <span class="jsstringcolor" style="color:brown">"MCWSD_support"</span><span>:</span><span class="jsstringcolor" style="color:brown"> false</span><br>  
+               <span>}</span><br>
+               <span>]</span><br>
+               <span>}</span><br>
+               <span>}</span><br>
+             </article>
+               <div style=" background-color: rgb(194, 189, 189) ; color: white; font-weight: bold;border-radius: 12px; text-align: center ; padding-top: 25px; padding-bottom:25px;margin: 0px;"> weblist.json ends </div> 
+                   
+            </article>
+    </div></div>
+
+    <script>
+      var modal2 = document.getElementById("myModal2");
+      var btn2 = document.getElementById("myBtn2");
+      var span2 = document.getElementsByClassName("close2")[0];
+      btn2.onclick = function() {
+        modal2.style.display = "block";
+      };
+      span2.onclick = function() {
+        modal2.style.display = "none";
+      };
+       window.onclick = function(event) {
+        if (event.target == modal2) {
+          modal2.style.display = "none";
+        }
+      };
+    </script>
+    
     <script>
       $(function(){
 var n = $(".collapse");
@@ -309,7 +609,9 @@ n.on("click", "a:not([data-toggle])", null, function () {
          n.collapse('hide');
      });
  });
-    
     </script>
+
+
+
 </body>
 </html>
