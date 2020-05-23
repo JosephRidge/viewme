@@ -562,28 +562,27 @@ font-weight: bold;
                 <div class="modal-content2">
                   <span class="close2">&times;</span>
 
-<!--               <div style=" background-color: rgb(194, 189, 189) ; color: white; font-weight: bold;border-radius: 12px; text-align: center ; padding-top: 25px; padding-bottom:25px;margin: 0px;"> weblist.json starts </div> -->
-              <article style="background-color: rgb(236, 235, 235); padding: 20px; height: auto; border-radius: 12px;">
-               </span>{<br><span class="jsstringcolor" style="color:brown">"ws_databases": </span>{<br><span class="jsnumbercolor" style="color:red">
-               </span>&nbsp;&nbsp;&nbsp; <span class="jsstringcolor" style="color:brown">"last_update"</span>:<span class="jsstringcolor" style="color:brown">"2020-01-01T12:00:00"</span>, <span class="jsstringcolor" style="color:brown"> "refresh_rate"</span>:<span class="jsstringcolor" style="color:brown">"1440"</span>, <br><span class="jsnumbercolor" style="color:red">
-               </span>&nbsp;&nbsp;&nbsp; <span class="jsstringcolor" style="color:brown">"db"</span>:<span class="jsstringcolor" style="color:brown"> [</span><br>
-               </span>&nbsp;&nbsp;&nbsp; <span class="jsstringcolor" style="color:brown">{</span><br>
-               </span>&nbsp;&nbsp;&nbsp; <span class="jsstringcolor" style="color:brown">"url"</span>:<span class="jsstringcolor" style="color:brown">"https://WSdatabase-provider1.com"</span>, <span class="jsstringcolor" style="color:brown"> "db_provider_name"</span>:<span class="jsstringcolor" style="color:brown">"Database provider 1"</span>, <span class="jsstringcolor" style="color:brown">"ws_db_id"</span>:<span>"1"</span> ,</span><br><span class="jsnumbercolor" style="color:red">
-               </span>
-               <span class="jsstringcolor" style="color:brown">"MCWSD_support"</span><span>:</span><span class="jsstringcolor" style="color:brown"> false</span><br>
-               <span>},</span><br>
-               <span>{</span>
-               &nbsp;&nbsp;&nbsp; <span class="jsstringcolor" style="color:brown">"url"</span>:<span class="jsstringcolor" style="color:brown">"https://WSdatabase-provider2.com"</span>, <span class="jsstringcolor" style="color:brown"> "db_provider_name"</span>:<span class="jsstringcolor" style="color:brown">"Database provider 2"</span>, <span style="color:brown"> "db_provider_name"</span>:<span class="jsstringcolor" style="color:brown">"Database provider 1"</span>, <span class="jsstringcolor" style="color:brown">"ws_db_id"</span>:<span style="color:brown"> "db_provider_name"</span>:<span class="jsstringcolor" style="color:brown">"Database provider 1"</span>, <span class="jsstringcolor" style="color:brown"> "2"</span> ,</span><br><span class="jsnumbercolor" style="color:red">
-                 </span>
-               &nbsp;&nbsp;&nbsp; <span class="jsstringcolor" style="color:brown">"MCWSD_support"</span><span>:</span><span class="jsstringcolor" style="color:brown"> false</span><br>  
-               <span>}</span><br>
-               <span>]</span><br>
-               <span>}</span><br>
-               <span>}</span><br>
-             </article>
-<!--                <div style=" background-color: rgb(194, 189, 189) ; color: white; font-weight: bold;border-radius: 12px; text-align: center ; padding-top: 25px; padding-bottom:25px;margin: 0px;"> weblist.json ends </div>  -->
-                   
-            </article>
+                    <script src="prism.js"></script>
+        <div> JSON list</div>
+    <pre><code class="language-json" style="width: 50%">
+        {
+            "ws_databases": {
+            "last_update": "2020-01-01T12:00:00", "refresh_rate": "1440",
+            "db": [
+            {
+            "url": "https://WSdatabase-provider1.com", "db_provider_name": "Database provider 1", "ws_db_id": "1",
+            "MCWSD_support":false
+            },
+            {
+            "url": "https://WSdatabase-provider2.com", "db_provider_name": "Database provider 2", "ws_db_id": "2",
+            "MCWSD_support":false
+            }
+            ]
+            }
+            }
+          
+
+    </code> </pre> 
     </div></div>
 
     <script>
