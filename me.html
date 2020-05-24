@@ -38,6 +38,15 @@
   font-family: 'Roboto-Regular', Arial, sans-serif;
 
 }
+     textarea{
+    width: 80%;
+    resize: horizontal;
+    resize: both;
+    width: 548px;
+    height: 493px;
+   
+    
+}
 .my_items{
    padding: 14px 16px;
    }
@@ -229,12 +238,15 @@ h3{
               margin: auto;
               padding: 20px;
               opacity: 0.9;
-              border: 1px solid rgb(189, 184, 184);
+/*               border: 1px solid rgb(189, 184, 184)' */
               width: 43%;
               /* overflow:auto; */
               border-radius:12px;
               height: auto;
               margin-top: 5%;
+               
+              float:right;
+              margin-right: 40px;
 margin-bottom: 22%;
               animation-duration: 0.4s;
 
@@ -242,7 +254,7 @@ margin-bottom: 22%;
             }
 @media screen and (max-width: 700px) {
    .modal{
-   
+   font-size:70%;
      float: left;
      
    }
@@ -314,19 +326,22 @@ float: center;
               margin: auto;
               padding: 20px;
               opacity: 0.9;
-              border: 1px solid rgb(189, 184, 184);
+/*               border: 1px solid rgb(189, 184, 184); */
               width: 43%;
               /* overflow:auto; */
               border-radius:12px;
               height: auto;
               margin-top: 5%;
 margin-bottom: 22%;
+               
+              float:right;
+              margin-right: 40px;
               animation-duration: 0.4s;
 
             }
 @media screen and (max-width: 700px) {
    .modal2{
-    
+    font-size:70%;
     float: left;
    }
    .modal-content2{
@@ -455,7 +470,7 @@ font-weight: bold;
               <li> <div class="btn-group"> <div class="buttony" id="myBtn">XML  List</div> </div> 
            
   <!-- The xml -->
-  <div id="myModal" class="modal">
+ <div id="myModal" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
@@ -463,74 +478,31 @@ font-weight: bold;
       <style>
        
               </style>
-<!--               <div style=" background-color: rgb(194, 189, 189) ; color: white; font-weight: bold;border-radius: 12px; text-align: center ; padding-top: 25px; padding-bottom:25px;margin: 0px;"> weblist.xml starts </div> -->
-              <article id="cody_code" style="background-color: rgb(236, 235, 235); padding: 20px; height: auto; border-radius: 12px;">
-              <span style="color:brown;">
-                <span style="color:black">&lt;</span> ?xml <span style="color:red">version</span> <span style="color:blue">="1.0"</span>
-                <span style="color:red">encoding </span> <span style="color:blue">="UTF-8"?</span><span style="color:black">&gt;</span><br />
-              
-                <span style="color:black">&lt;</span>
-                <span style="color: purple;font-weight: bold;">ws_databases</span>
-                <span style="color: black; font-weight: bold; ">xmlns:xsi=</span>
-                <href style="color: blue">"http://www.w3.org/2001/XMLSchema-instance"</href>xsi:noNamespaceSchemaLocation=<href style="color: blue">"https://www.ca.go.ke/dsa/geolocationdatabaselist.xsd</href>
-                <!---  code-->
-                <span style="color:black">&gt;</span><br />
-                <!-- <ws_databases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.ca.go.ke/dsa/geolocationdatabaselist.xsd"> -->
-              &nbsp;  &nbsp; &nbsp; <span style="color:black">&lt;</span> <span style="color: purple;font-weight: bold;">last_update</span>
-                <!-- code --><span style="color:black">&gt;</span> <span style="color:black">2020-01-01T12:00:00 </span>
-                <span style="color:black">&lt;</span><span style="color: purple;font-weight: bold;">/last_update </span>
-                <!-- code --><span style="color:black">&gt;</span><br />
-              
-              &nbsp;  &nbsp; &nbsp; <span style="color:black">&lt;</span><span style="color: purple;font-weight: bold;"></span> <span style="color: purple;font-weight: bold;">refresh_rate </span></span
-              ><!-- code --><span style="color:black">&gt;</span>
-              <span style="color:black"> 1440 </span> <span style="color:black">&lt;</span
-              ><span style="color: purple;font-weight: bold;">/refresh_rate</span>
-              <!-- code --><span style="color:black">&gt;</span><br />
-              
-              <span style="color:black">&lt;</span
-              ><span style="color: purple;font-weight: bold;">db</span>
-              <!-- code --><span style="color:black">&gt;</span><br />
-              
-              &nbsp;  &nbsp; &nbsp; <span style="color:black">&lt;</span
-              ><span style="color: purple;font-weight: bold;">url</span> <span style="color: black"><href style="color: blue">https://WSdatabase-provider1.com</href></span>
-              <!-- code --><span style="color:black">&gt;</span>
-              <span style="color:black">&lt;</span
-              ><span style="color: purple;font-weight: bold;">/url</span>
-              <!-- code --><span style="color:black">&gt;</span><br />
-              
-              &nbsp;  &nbsp; &nbsp; <span style="color:black">&lt;</span
-              ><span style="color: purple;font-weight: bold;">db_provider_name</span>
-              <!-- code --><span style="color:black">&gt;</span><span style="color:black"> Database provider 1</span> 
-              <span style="color:black">&lt;</span
-              ><span style="color: purple;font-weight: bold;">/db_provider_name </span
-              ><!-- code --><span style="color:black">&gt;</span><br />
-              
-              &nbsp;  &nbsp; &nbsp; <span style="color:black">&lt;</span
-              ><span style="color: purple;font-weight: bold;">ws_db_id</span><span style="color:black"> 1</span> 
-              <!-- code --><span style="color:black">&gt;</span>
-              <span style="color:black">&lt;</span
-              ><span style="color: purple;font-weight: bold;">/ws_db_id </span
-              ><!-- code --><span style="color:black">&gt;</span><br />
-              &nbsp;  &nbsp; &nbsp; <span style="color:black">&lt;</span
-              ><span style="color: purple;font-weight: bold;">MCWSD_support</span><span style="color:black"> false</span> 
-              <!-- code --><span style="color:black">&gt;</span>
-              <span style="color:black">&lt;</span
-              ><span style="color: purple;font-weight: bold;">/MCWSD_support </span
-              ><!-- code --><span style="color:black">&gt;</span><br />
-              
-              <span style="color:black">&lt;</span
-              ><span style="color: purple;font-weight: bold;">/db</span>
-              <!-- code --><span style="color:black">&gt;</span><br />
-              
-              <span style="color:black">&lt;</span
-              ><span style="color: purple;font-weight: bold;">/ws_databases</span>
-              <!-- code --><span style="color:black">&gt;</span><br />
-              </article>
-<!--               <div style=" background-color: rgb(194, 189, 189) ; color: white; font-weight: bold;border-radius: 12px; text-align: center ; padding-top: 25px; padding-bottom:25px;margin: 0px;"> weblist.xml ends </div> -->
+                 <div> XML list</div>
+                <textarea style="background-color: aliceblue" readonly="" >
+                <?xml version="1.0" encoding="UTF-8"?>
+                <ws_databases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.ca.go.ke/dsa/geolocationdatabaselist.xsd">
+                <last_update>2020-01-01T12:00:00</last_update>
+                <refresh_rate>1440</refresh_rate>
+                <db>
+                <url>https://WSdatabase-provider1.com</url>
+                <db_provider_name>Database provider 1</db_provider_name>
+                <ws_db_id>1</ws_db_id>
+                <MCWSD_support>false</MCWSD_support>
+                </db>
+                <db>
+                <url>https://WSdatabase-provider2.com</url>
+                <db_provider_name>Database provider 2</db_provider_name>
+                <ws_db_id>2</ws_db_id>
+                <MCWSD_support>false</MCWSD_support>
+                </db>
+                </ws_databases>
+            
+                </textarea>
+                
+               </div>
   
   </div>
-
-
 
   <script>
   var modal = document.getElementById("myModal");
@@ -559,15 +531,17 @@ font-weight: bold;
             
 
               <div id="myModal2" class="modal">
+  <div id="myModal2" class="modal">
 
                 <!-- Modal content -->
                 <div class="modal-content2">
                   <span class="close2">&times;</span>
-
-                    <script src="prism.js"></script>
+ <!-- <article style="background-color: rgb(236, 235, 235); padding: 20px; height: auto; border-radius: 12px;"> -->
+    
+        <script src="prism.js"></script>
         <div> JSON list</div>
-    <pre><code class="language-json" style="width: 50%">
-        {
+        <textarea  style="background-color: aliceblue; " readonly="" >
+          {
             "ws_databases": {
             "last_update": "2020-01-01T12:00:00", "refresh_rate": "1440",
             "db": [
@@ -582,9 +556,9 @@ font-weight: bold;
             ]
             }
             }
+            
+          </textarea>
           
-
-    </code> </pre> 
     </div></div>
 
     <script>
